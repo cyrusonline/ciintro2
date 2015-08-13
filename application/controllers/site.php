@@ -36,4 +36,10 @@ class Site extends CI_Controller {
 		echo $this->math->add(2,2);
 		
 	}
+	
+	function getValue(){
+		$this->load->model("get_db");
+		$data['results']= $this->get_db->getAll();
+		
+	}
 }
