@@ -1,8 +1,8 @@
 <?php
 
-	class get_db extends CI_Model{
+	class Get_db extends CI_Model{
 		function getAll(){
-			$query->$this->db->query("SELECT * FROM test");
-			return $query;
+			$query=$this->db->query("SELECT * FROM test");
+			return $query->result();
 		}
 	}

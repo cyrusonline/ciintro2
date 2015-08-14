@@ -40,6 +40,7 @@ class Site extends CI_Controller {
 	function getValue(){
 		$this->load->model("get_db");
 		$data['results']= $this->get_db->getAll();
+		$this->load->view("view_db",$data);
 		
 	}
 }
